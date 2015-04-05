@@ -177,7 +177,7 @@ result human(int card[4][13]) {
 	return tmp;
 }
 // judge who wins
-void judgement(result tmp1, result tmp2){
+void judgement(result tmp1, result tmp2) {
     float sum1, sum2;
     int times1, times2;
 	sum1 = tmp1.sum;
