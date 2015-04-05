@@ -7,6 +7,13 @@ struct result {
 	float sum;
 	int times;
 };
+void distribution(int card[4][13], int scard[2]);
+void display(int record[20][2]); 
+float num(int number);
+result computer(int card[4][13], float sum1);
+result human(int card[4][13]); 
+void judgement(result tmp1, result tmp2);
+void initialize(int card[4][13]);
 // distribute all cards
 void distribution(int card[4][13], int scard[2]) {
 	bool flag = true;
@@ -31,10 +38,10 @@ void display(int record[20][2]) {
 	    }
 		else {
 	        switch (record[i][0]) {
-    	        case 0: cout << "ºìÌÒ"; break; 
-		        case 1: cout << "ºÚÌÒ"; break;
-		        case 2: cout << "·½¿é"; break;
-		        case 3: cout << "Ã·»¨"; break;
+    	        case 0: cout << "ÂºÃ¬ÃŒÃ’"; break; 
+		        case 1: cout << "ÂºÃšÃŒÃ’"; break;
+		        case 2: cout << "Â·Â½Â¿Ã©"; break;
+		        case 3: cout << "ÃƒÂ·Â»Â¨"; break;
             }
 	        switch (record[i][1]) {
     	        case 0: cout << 'A'; break;
