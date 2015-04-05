@@ -7,6 +7,13 @@ struct result {
 	float sum;
 	int times;
 };
+void distribution(int card[4][13], int scard[2]);
+void display(int record[20][2]); 
+float num(int number);
+result computer(int card[4][13], float sum1);
+result human(int card[4][13]); 
+void judgement(result tmp1, result tmp2);
+void initialize(int card[4][13]);
 // distribute all cards
 void distribution(int card[4][13], int scard[2]) {
 	bool flag = true;
@@ -170,7 +177,7 @@ result human(int card[4][13]) {
 	return tmp;
 }
 // judge who wins
-void judgement(result tmp1, result tmp2){
+void judgement(result tmp1, result tmp2) {
     float sum1, sum2;
     int times1, times2;
 	sum1 = tmp1.sum;
